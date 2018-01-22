@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--  
+    Document Title
+    =============================================
+    -->
+    <title>UG2 Prize Challenge | CVPR18 Workshop</title>
+    <!--  
+    Favicons
+    =============================================
+    -->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/images/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!--  
+    Stylesheets
+    =============================================
+    
+    -->
+    <!-- Default stylesheets-->
+    <link href="assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Template specific stylesheets-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Volkhov:400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link href="assets/lib/animate.css/animate.css" rel="stylesheet">
+    <link href="assets/lib/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/lib/et-line-font/et-line-font.css" rel="stylesheet">
+    <link href="assets/lib/flexslider/flexslider.css" rel="stylesheet">
+    <link href="assets/lib/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/lib/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet">
+    <link href="assets/lib/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
+    <link href="assets/lib/simple-text-rotator/simpletextrotator.css" rel="stylesheet">
+    <!-- Main stylesheet and color file-->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link id="color-scheme" href="assets/css/colors/default.css" rel="stylesheet">
+  </head>
+  <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+    <main>
+      <div class="page-loader">
+        <div class="loader">Loading...</div>
+      </div>
+      <nav class="navbar navbar-custom navbar-fixed-top navbar-transparent" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="index.html">CVPR 2018 UG<sup>2</sup> Prize Challenge</a>
+          </div>
+          <div class="collapse navbar-collapse" id="custom-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="dataset.html">Dataset</a></li>
+              <li><a href="rules.html">Rules</a></li>
+              <li><a href="submissions.html">Submissions</a></li>
+              
+              <!-- <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Challenges</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown"><a href="challenge1.html">Qualitative image enhancement</a>
+                  </li>
+                  <li class="dropdown"><a href="challenge2.html">Quantitative image enhancement</a>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="submission.html">Submission</a></li> -->
+              <li><a href="program.html">Program</a></li>      
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section class="home-section bg-dark-30" id="home" >
+        <div class="video-player" data-property="{videoURL:'https://youtu.be/PXqntJFv0Yc', containment:'.home-section', startAt:30, mute:true, autoPlay:true, loop:true, opacity:1, showControls:false, showYTLogo:false, vol:25}"></div>
+        <div class="video-controls-box">
+          <div class="container">
+            <div class="video-controls"><!-- <a class="fa fa-volume-up" id="video-volume" href="#">&nbsp;</a> --><a class="fa fa-pause" id="video-play" href="#">&nbsp;</a></div>
+          </div>
+        </div>
+        <div class="titan-caption">
+          <div class="caption-content" style="background: rgba(0,0,0,0.3)">
+            <div class="font-alt mb-30 titan-title-size-2">Bridging the Gap Between Computational Photography and Visual Recognition:</div>
+            <div class="font-alt mb-40 titan-title-size-4">UG<sup>2</sup> Prize Challenge</div><!-- <a class="section-scroll btn btn-border-w btn-round" href="#about">Learn More</a> -->
+            <div class="font-alt mb-30 titan-title-size-2">CVPR 2018 Workshop Challenge</div>
+          </div>
+        </div>
+      </section>
+      <div class="main">
+        <!-- <section class="module-extra-small bg-dark">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-md-8 col-lg-6 col-lg-offset-2">
+                <div class="callout-text font-alt">
+                  <h4 style="margin-top: 0px; font-;">looking for a first-class business consultant?</h4>
+                  <p style="margin-bottom: 0px;">We are always here for you</p>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-2">
+                <div class="callout-btn-box"><a class="btn btn-w btn-round" href="#">get a quote</a></div>
+              </div>
+            </div>
+          </div>
+        </section> -->
+        <section class="module-medium">
+          <div class="container">
+            <div class="row multi-columns-row">
+              <div class="col-sm-12">
+                <p class="module-title font-alt" style="margin: 0 0 20px">Objective</p>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <div class="content-box">
+                    <h4 class="content-box-subtitle font-serif">What is the current state-of-the art for image restoration and enhancement applied to images acquired under less than ideal circumstances?</h4>
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <div class="content-box">
+                    <h4 class="content-box-subtitle font-serif">Can the application of enhancement algorithms as a pre-processing step improve image interpretability for manual analysis or automatic visual recognition to classify scene content?</h4>
+                  </div>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                  <div class="content-box">
+                    <h3 class="content-box-title font-serif">The UG<sup>2</sup> Challenge seeks to answer these important questions for general applications related to computational photography and scene understanding. As a well-defined case study, the challenge aims to advance the analysis of images collected by small UAVs by improving image restoration and enhancement algorithm performance using the UG<sup>2</sup> Dataset</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="module bg-dark-60 parallax-bg" data-background="assets/images/finance_funfact_bg.jpg" style="background-position: 50% 15%;">
+          <div class="container">
+            <div class="row multi-columns-row">
+              <!-- <p class="module-title font-alt" style="margin: 0 0 20px">The Dataset</p> -->
+              <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="count-item mb-sm-40">
+                  <div class="count-icon"><span class="icon-target"></span></div>
+                  <h3 class="count-to font-alt" data-countto="2"></h3>
+                  <h5 class="count-title font-serif">Categories</h5>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="count-item mb-sm-40">
+                  <div class="count-icon"><span class="fa fa-users"></span></div>
+                  <h3 class="count-to font-alt" data-countto="4"></h3>
+                  <h5 class="count-title font-serif">Winners</h5>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="count-item mb-sm-40">
+                  <div class="count-icon"><span class="icon-trophy"></span></div>
+                  <h3 class="font-alt">$<b class="count-to" data-countto="75"></b>K</h3>
+                  <h5 class="count-title font-serif">Awarded in prizes</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="module pt-0 pb-0">
+          <div class="row position-relative m-0">
+            <div class="col-xs-12 col-md-6 side-image" data-background="assets/images/section-14.jpg"></div>
+            <div class="col-xs-12 col-md-6 col-md-offset-6">
+              <div class="row finance-image-content">
+                <div class="col-md-10 col-md-offset-1">
+                  <h2 class="module-title font-alt align-left">Available Challenges</h2>
+                  <div class="row multi-columns-row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                      <div class="alt-features-item">
+                        <div class="alt-features-icon"><span class="fa fa-eye"></span></div>
+                        <h3 class="alt-features-title font-alt">Image Enhancement to Facilitate Manual Inspection</h3>
+                        Evaluation of the qualitative enhancement of images from the UG<sup>2</sup> dataset.
+                        <br><br>
+                        <li>A majority vote from an odd number of raters will determine which image, the original or the restored/enhanced version, is of higher quality.</li>
+                        <li>Rater reaction time will be used to gauge thedifficulty of presented image pair.</li>
+                      </div>
+                     <!--  <div class="alt-features-item">
+                        <div class="alt-features-icon"><span class="icon-puzzle"></span></div>
+                        <h3 class="alt-features-title font-alt">Marketing Strategy</h3>
+                        Scoring will make use of human raters voting on perceived improvement.
+                      </div>
+                      <div class="alt-features-item">
+                        <div class="alt-features-icon"><span class="icon-pricetags"></span></div>
+                        <h3 class="alt-features-title font-alt">Taxes Advisory</h3>A wonderful serenity has taken possession of my entire soul like these sweet mornings.
+                      </div> -->
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                      <div class="alt-features-item">
+                        <div class="alt-features-icon"><span class="icon-linegraph"></span></div>
+                        <h3 class="alt-features-title font-alt">Image Enhancement to Improve Automatic Object Recognition</h3>
+                        Evaluation of the quantitative enhancement of images from the UG<sup>2</sup> dataset.
+                        <br><br>
+                        <li>Improvement on top-1 and top-5 classification of enhanced images will determine whether the enhancement techniques improve recognition.</li>
+                      </div>
+                     <!--  <div class="alt-features-item">
+                        <div class="alt-features-icon"><span class="icon-laptop"></span></div>
+                        <h3 class="alt-features-title font-alt">IT management</h3>A wonderful serenity has taken possession of my entire soul like these sweet mornings.
+                      </div>
+                      <div class="alt-features-item">
+                        <div class="alt-features-icon"><span class="icon-linegraph"></span></div>
+                        <h3 class="alt-features-title font-alt">Data Analytics</h3>A wonderful serenity has taken possession of my entire soul like these sweet mornings.
+                      </div> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="module" id="team" style="padding:100px">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                <h2 class="module-title font-alt">Keynote speakers</h2>
+                <!-- <div class="module-subtitle font-serif">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</div> -->
+              </div>
+            </div>
+            <div class="row">
+              <div class="mb-sm-20 wow fadeInUp col-md-4 col-sm-6 col-xs-12" onclick="wow fadeInUp">
+                <div class="team-item">
+                  <div class="team-image"><img src="assets/images/taylor.jpg" alt="Speaker Photo" style="width:75%"/>
+                    <div class="team-detail">
+                      <!-- <h5 class="font-alt">Hi all</h5> -->
+                      <p class="font-serif">Dr. Taylor's research interests lie primarily in the fields of Computer Vision and Robotics and include: reconstruction of 3D models from images, vision-guided robot navigation and smart camera networks.</p>
+                      <div class="team-social"><a href="https://www.linkedin.com/in/camillo-taylor-768551141/"><i class="fa fa-linkedin"></i></a><a href="http://www.cis.upenn.edu/~cjtaylor/home.html"><i class="fa fa-globe"></i></a><a href="https://scholar.google.com/citations?user=vMDCJHcAAAAJ&hl=en&oi=ao"><i class="fa fa-google"></i></a></div>
+                    </div>
+                  </div>
+                  <div class="team-descr font-alt">
+                    <div class="team-name">Camillo J. Taylor</div>
+                    <div class="team-role">University of Pennsylvania</div>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-sm-20 wow fadeInUp col-md-4 col-sm-6 col-xs-12" onclick="wow fadeInUp">
+                <div class="team-item">
+                  <div class="team-image"><img src="assets/images/hoogs.jpg" alt="Speaker Photo" style="width:75%"/>
+                    <div class="team-detail">
+                      <!-- <h5 class="font-alt">Good day</h5> -->
+                      <p class="font-serif">Dr. Hoogs supervises the Kitware Computer Vision group and provides strategic direction in this area.</p>
+                      <div class="team-social"><a href="https://www.linkedin.com/in/anthony-hoogs-4b5392/"><i class="fa fa-linkedin"></i></a><a href="https://www.kitware.com/anthony-hoogs/"><i class="fa fa-globe"></i></a><a href="https://scholar.google.com/citations?user=yZ5WqE4AAAAJ&hl=en&oi=ao"><i class="fa fa-google"></i></a></div>
+                    </div>
+                  </div>
+                  <div class="team-descr font-alt">
+                    <div class="team-name">Anthony Hoogs</div>
+                    <div class="team-role">Senior Director of Computer Vision, Kitware</div>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-sm-20 wow fadeInUp col-md-4 col-sm-6 col-xs-12" onclick="wow fadeInUp">
+                <div class="team-item">
+                  <div class="team-image"><img src="assets/images/boehnen.jpg" alt="Speaker Photo" style="width:75%"/>
+                    <div class="team-detail">
+                      <!-- <h5 class="font-alt">Yes, it's me</h5> -->
+                      <p class="font-serif">Dr. Boehnen is a Senior Program Manager at the Intelligence Advanced Research Projects Activity (IARPA), Office of the Director of National Intelligence..</p>
+                      <div class="team-social"><a href="https://www.linkedin.com/in/chris-boehnen-1375b567/"><i class="fa fa-linkedin"></i></a></div>
+                    </div>
+                  </div>
+                  <div class="team-descr font-alt">
+                    <div class="team-name">Christopher Boehnen</div>
+                    <div class="team-role">Senior Program Manager, IARPA</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- <section class="module bg-dark-60 request-cta" data-background="assets/images/rqst_bg.jpg">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-4">
+                <h2 class="font-alt">Request a call back</h2>
+                <p>Would you like to speak to one of our financial advisers over the phone? Just submit your details and we’ll be in touch shortly. You can also email us if you would prefer.</p>
+              </div>
+              <div class="col-sm-8">
+                <div class="row">
+                  <form class="form rqst-form" id="requestACall" role="form" method="post" action="php/request_call.php">
+                    <div class="form-group col-sm-6 col-xs-12">
+                      <input class="form-control input-lg" type="text" name="name" placeholder="Name"/>
+                    </div>
+                    <div class="form-group col-sm-6 col-xs-12">
+                      <select class="form-control input-lg" name="subject">
+                        <option value="subject1" disabled="" selected="">Subject</option>
+                        <option value="BusinessConsulting">Business consulting</option>
+                        <option value="MarketingStrategy">Marketing Strategy</option>
+                        <option value="TaxesAdvisory">Taxes Advisory</option>
+                        <option value="InvestmentPlanning">Investment Planning</option>
+                        <option value="ITManagement">IT Management</option>
+                        <option value="DataAnalytics">Data Analytics</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-sm-6 col-xs-12">
+                      <input class="form-control input-lg" type="text" name="phone" placeholder="Phone Number"/>
+                    </div>
+                    <div class="form-group col-sm-6 col-xs-12">
+                      <button class="btn btn-border-w btn-circle btn-block" id="racSubmit" type="submit"><i class="fa fa-paper-plane-o"></i> Submit</button>
+                    </div>
+                    <div id="requestFormResponse"></div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section> -->
+         <section class="module bg-dark-60 parallax-bg" data-background="assets/images/clock.jpg" style="background-position: 50% 15%; padding:100px">
+          <div class="container">
+            <div class="row multi-columns-row">
+              <p class="module-title font-alt" style="margin: 0 0 20px">Important Dates</p>
+              <div class="col-sm-6 col-md-3 col-lg-3">
+                <div class="count-item mb-sm-40">
+                  <div class="count-icon"><span class="icon-strategy"></span></div>
+                  <h3 class="font-alt">Open registration</h3>
+                  <h5 class="count-title font-serif">January 30, 2018</h5>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-3 col-lg-3">
+                <div class="count-item mb-sm-40">
+                  <div class="count-icon"><span class="icon-tools-2"></span></div>
+                  <h3 class="font-alt">Submission deadline</h3>
+                  <h5 class="count-title font-serif">April 15, 2018</h5>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-3 col-lg-3">
+                <div class="count-item mb-sm-40">
+                  <div class="count-icon"><span class="icon-trophy"></span></div>
+                  <h3 class="font-alt">Winners announcement</h3>
+                  <h5 class="count-title font-serif">May 15, 2018</h5>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-3 col-lg-3">
+                <div class="count-item mb-sm-40">
+                  <div class="count-icon"><span class="icon-target"></span></div>
+                  <h3 class="font-alt">CVPR Workshop</h3>
+                  <h5 class="count-title font-serif">June 18, 2018</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="module-small bg-dark p-0">
+          <div class="container">
+            <div class="row client">
+              &nbsp;
+            </div>
+          </div>
+        </section>
+        <section class="module pt-0 pb-0" id="contact">
+          <div class="row position-relative m-0">
+            <div class="col-xs-12 col-md-6">
+              <div class="row finance-image-content">
+                <div class="col-md-10 col-md-offset-1">
+                  <h2 class="module-title font-alt align-left">Contact</h2>
+                  <form id="contactForm" role="form" method="post" action="php/contact.php">
+                    <div class="form-group">
+                      <label class="sr-only" for="name">Name</label>
+                      <input class="form-control" type="text" id="name" name="name" placeholder="Your Name*" required="required" data-validation-required-message="Please enter your name."/>
+                      <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="form-group">
+                      <label class="sr-only" for="email">Email</label>
+                      <input class="form-control" type="email" id="email" name="email" placeholder="Your Email*" required="required" data-validation-required-message="Please enter your email address."/>
+                      <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="form-group">
+                      <textarea class="form-control" rows="7" id="message" name="message" placeholder="Your Message*" required="required" data-validation-required-message="Please enter your message."></textarea>
+                      <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="text-center">
+                      <button class="btn btn-block btn-round btn-d" id="cfsubmit" type="submit">Submit</button>
+                    </div>
+                  </form>
+                  <div class="ajax-response font-alt" id="contactFormResponse"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-md-offset-6 side-image p-0">
+              <section id="map-section">
+                <!-- <div id="map"></div> -->
+                <iframe
+                  width="100%"
+                  height="450"
+                  frameborder="0" style="border:0"
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCh46c5GHPWfZ1f9pNJpv7FC4_e20cop24
+                    &q=Salt+Palace+Convention+Center" allowfullscreen>
+                </iframe>
+              </section>
+            </div>
+          </div>
+        </section>
+        
+        <hr class="divider-d">
+        <footer class="footer bg-dark">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6">
+                <p class="copyright font-alt">&copy; 2018&nbsp;<a href="index.html">UG<sup>2</sup></a>, All Rights Reserved</p>
+              </div>
+              <div class="col-sm-6">
+                <div class="footer-social-links"><a href="mailto:ug2challenge@gmail.com?"><i class="fa fa-envelope"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>div>
+      <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></
+    </main>
+    <!--  
+    JavaScripts
+    =============================================
+    -->
+    <script src="assets/lib/jquery/dist/jquery.js"></script>
+    <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/lib/wow/dist/wow.js"></script>
+    <script src="assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js"></script>
+    <script src="assets/lib/isotope/dist/isotope.pkgd.js"></script>
+    <script src="assets/lib/imagesloaded/imagesloaded.pkgd.js"></script>
+    <script src="assets/lib/flexslider/jquery.flexslider.js"></script>
+    <script src="assets/lib/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="assets/lib/smoothscroll.js"></script>
+    <script src="assets/lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
+    <script src="assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
+    <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh46c5GHPWfZ1f9pNJpv7FC4_e20cop24"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
