@@ -110,6 +110,11 @@
                   <li>Image Enhancement to Facilitate Manual Inspection</li>
                   <li>Image Enhancement to Improve Automatic Object Recognition</li>
                 </ol>
+                <p style="text-align: justify;">Each challenge will have:</p>
+                <ul>
+                  <li>$25K awarded to the top scoring entry.</li>
+                  <li>$12.5K awarded to the runner up</li>
+                </ul>
                 <p style="text-align: justify;">Participants may submit algorithms to both of the challenges, with a limit of 3 algorithms submitted per challenge. The <a style="color: #337ab7; text-decoration: underline" href="https://goo.gl/forms/8FV0xi5pYO9D6p7j2">registration form</a> must be completed by one of the team contributors, indicating the team's affiliation, contact information and challenges in which the team will participate.</p>
               </div>
             </div>
@@ -120,7 +125,7 @@
                 <h4 class="module-subtitle font-alt" style="margin-bottom: 20px; text-align: left">1. Image Enhancement to Facilitate Manual Inspection</h4>                
                 <p style="text-align: justify;">The first challenge will be an evaluation of the qualitative enhancement of images (super-resolution, de-noising, and deblurring are within scope here) from a sequestered testing dataset. At least one test in the challenge will include calibration chart ground-truth: charts with vertical lines and color calibration data.</p>
                 <p style="text-align: justify;">Scoring in this case will make use of human raters voting on perceived improvement. In order to do this, we will use Amazon’s Mechanical Turk service to crowdsource the judgements over large populations of raters. A likert-scale based task will be deployed, whereby a reasonably large number of raters will determine which image, the original or the restored/enhanced version, is of higher quality.</p>
-                <p style="text-align: justify;">Further, inspired by visual psychophysics, rater reaction time will be used to gauge the difficulty of presented image pairs. This will allow us to assign weights to each result (i.e., if a rater takes a long time to determine that an enhanced image is better, it may not be as good as a result where the rater immediately selected the enhanced image). This will be factored into the final score.</p>
+                <p style="text-align: justify;">Further, inspired by visual psychophysics, rater reaction time will be used to gauge the difficulty of presented image pairs. This will allow us to assign weights to each result (i.e., if a rater takes a long time to determine that an enhanced image is better, it may not be as good as a result where the rater immediately made the same conclusion). This will be factored into the final score.</p>
 
                 <h4 class="module-subtitle font-alt" style="margin-bottom: 20px; text-align: left; padding-top: 20px">2. Image Enhancement to Improve Automatic Object Recognition</h4>                
                 <p style="text-align: justify;">The second challenge will be an evaluation of classification improvement. The evaluation protocol will allow participants to make use of some within dataset training data, and as much out of dataset training data as they would like for training / validation purposes. <b>Participants will not be tasked with the creation of novel classification algorithms.</b></p>
@@ -131,7 +136,7 @@
 
                 <p style="text-align: justify;">The networks used for the UG<sup>2</sup> classification task return a list of the ImageNet synsets along with the probability of the object belonging to each of the synsets classes. However, taking into account that in some cases it is impossible to provide a fine-grained labeling for the annotated objects, we defined 31 super-classes for the dataset most of them composed by more than one ImageNet synset. For example, the Car super-class would contain ImageNet synsets such as <a style="color: #337ab7; text-decoration: underline" href="http://imagenet.stanford.edu/synset?wnid=n02930766">n02930766: cab</a>, <a style="color: #337ab7; text-decoration: underline" href="http://imagenet.stanford.edu/synset?wnid=n03594945">n03594945: jeep</a>, <a style="color: #337ab7; text-decoration: underline" href="http://imagenet.stanford.edu/synset?wnid=n04467665">n04467665: trailer truck</a>, etc.</p>
                 <p style="text-align: justify;">That is, each annotated image <i>i</i>  has a single super-class label <i>L<sub>i</sub></i> which in turn is defined by a set of ImageNet synsets <i>L<sub>i</sub>={s<sub>1</sub>, s<sub>2</sub>, ..., s<sub>i</sub>}</i>. For a complete list of the equivalencies between UG<sup>2</sup> superclasses and ImageNet synsets, see: <a style="color: #337ab7; text-decoration: underline" href="https://drive.google.com/open?id=0BzFMgHiPGRshRWRvN0Naem4tWUU"> UG<sup>2</sup>'s' supplemental material</a> </p>
-                <p style="text-align: justify; padding-bottom: 50px">To measure accuracy, we observe the number of correctly identified synsets in the top 5 predictions made by each pre-trained network. A prediction is considered to be correct if it's synset belongs to the set of synsets in the ground-truth super-class label. We use two metrics for this. The first measures the rate of detection of at least 1 correctly classified synset class. In other words, for a super-class label (L<sub>i</sub> = {s<sub>1</sub>, ..., s<sub>n</sub>}), a network is able to detect 1 or more correctly classified synsets in the top 5 predictions. The second measures the rate of detecting all the possible correct synset classes in the super-class label synset set. For example, for a super-class label (L<sub>i</sub> = {s<sub>1</sub>, s<sub>2</sub>, s<sub>3</sub>}), a network is able to detect 3 correct synsets in the top 5 labels.</p>
+                <p style="text-align: justify; padding-bottom: 50px">To measure accuracy, we observe the number of correctly identified synsets in the top 5 predictions made by each pre-trained network. A prediction is considered to be correct if it's synset belongs to the set of synsets in the ground-truth super-class label. We use two metrics for this. The first measures the rate of detection of at least 1 correctly classified synset class. In other words, for a super-class label (<i>L<sub>i</sub> = {s<sub>1</sub>, ..., s<sub>n</sub></i>}), a network is able to detect 1 or more correctly classified synsets in the top 5 predictions. The second measures the rate of detecting all the possible correct synset classes in the super-class label synset set. For example, for a super-class label (L<sub>i</sub> = {s<sub>1</sub>, s<sub>2</sub>, s<sub>3</sub>}), a network is able to detect 3 correct synsets in the top 5 labels.</p>
 
               </div>
             </div>
@@ -147,14 +152,14 @@
                 <p class="copyright font-alt">&copy; 2018&nbsp;<a href="index.html">UG<sup>2</sup></a>, All Rights Reserved</p>
               </div>
               <div class="col-sm-6">
-                <div class="footer-social-links"><a style="color: #337ab7; text-decoration: underline" href="mailto:ug2challenge@gmail.com?"><i class="fa fa-envelope"></i></a>
+                <div class="footer-social-links"><a href="mailto:ug2challenge@gmail.com?"><i class="fa fa-envelope"></i></a>
                 </div>
               </div>
             </div>
           </div>
         </footer>
       </div>
-      <div class="scroll-up"><a style="color: #337ab7; text-decoration: underline" href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
+      <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
     </main>
     <!--  
     JavaScripts
