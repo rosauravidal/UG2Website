@@ -87,7 +87,9 @@
         </div>
       </nav>
       
+      
       <div class="main">
+
         <section class="module bg-dark-30 portfolio-page-header" data-background="assets/images/faqbg.jpg" style="padding: 90px 0;">
           <div class="container">
             <div class="row">
@@ -97,6 +99,9 @@
             </div>
           </div>
         </section>
+        <div class="alert alert-danger" role="alert" style=" margin-bottom: 0px">
+          <button class="close" type="button" data-dismiss="alert" aria-hidden="true">&times;</button><center><i class="fa fa-cog fa-spin"></i><strong>Alert!</strong> Don't forget to check the <a style="color: #337ab7; text-decoration: underline" href="submissions.html#changelog">latest changes</a> to the challenge's files and rules. <b>Last update: 03/22/2018</b></center>
+        </div>
         
         <section class="module-medium" style="padding-bottom: 0px">
           <div class="container">            
@@ -112,10 +117,31 @@
                       <div class="panel-group" id="accordion">
                         <div class="panel panel-default">
                           <div class="panel-heading">
-                            <h4 class="panel-title font-alt"><a data-toggle="collapse" data-parent="#accordion" href="#support1">What will be the input format (PNG or JPEG)?</a></h4>
+                            <h4 class="panel-title font-alt"><a data-toggle="collapse" data-parent="#accordion" href="#support1">What will be the input format?</a></h4>
                           </div>
                           <div class="panel-collapse collapse in" id="support1">
-                            <div class="panel-body" style="text-align: justify">JPEG.
+                            <div class="panel-body" style="text-align: justify">We will allow for algorithms that receive either JPG or PNG images as their input.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="panel panel-default">
+                          <div class="panel-heading">
+                            <h4 class="panel-title font-alt"><a data-toggle="collapse" data-parent="#accordion" href="#support8">What is the workflow for the Image Enhancement to Improve Automatic Object Recognition Challenge? What will we receive as inputs and how will our outputs be processed?</a></h4>
+                          </div>
+                          <div class="panel-collapse collapse in" id="support8">
+                            <div class="panel-body" style="text-align: justify"> 
+                              <img src="assets/images/Challenge2DevKitFlow.png">
+                              The input images will be provided to the container at run time through Docker’s mounting option, the images to be provided to the participant's algorithms will be either JPG or PNG frames (participants will have to specify the input format their submissions require). The processed image returned by the algorithms must be in one of the following data types:
+                              <ul>
+                                <li>JPEG</li>
+                                <li>JPG</li>
+                                <li>TIFF</li>
+                                <li>TIF</li>
+                                <li>PNG</li>
+                              </ul>
+
+                              <img src="assets/images/Challenge2EvalFlow.png">
+                              For the evaluation of the algorithm's improvement on classification (as well as for the Dry Run), we will crop the objects of interest out of the processed images returned by the participants submissions, and proceed to evaluate their classification metrics (see <a style="color: #337ab7; text-decoration: underline" href="https://drive.google.com/drive/folders/1_Mn5e8Qoj3J0vRq02F7UJZ_-XfvLxolc?usp=sharing">Development Kit's Readme</a> on how to run the evaluation code).
                             </div>
                           </div>
                         </div>
