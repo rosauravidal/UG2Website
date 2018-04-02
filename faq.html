@@ -147,6 +147,18 @@
                         </div>
                         <div class="panel panel-default">
                           <div class="panel-heading">
+                            <h4 class="panel-title font-alt"><a data-toggle="collapse" data-parent="#accordion" href="#support9">Can our enhanced image be of different resolution than the input?</a></h4>
+                          </div>
+                          <div class="panel-collapse collapse in" id="support9">
+                            <div class="panel-body" style="text-align: justify"> 
+                              We restrict the output size to be the same as that of the input images. Therefore, participants whose algorithms are focused on enhancing the images resolution (and consequently modify the size of the input image) would then need to resize their output image to that of the input (we will not do any resizing) if they are participating in Challenge 2.
+
+                              In addition to this, it is important to mention that once we crop the extracted object regions out of the processed image we will again resize that extracted crop region to the default input size of the classification networks (224x224 for VGG16, VGG19 and ResNet50 and 299x299 for InceptionV3).
+                            </div>
+                          </div>
+                        </div>
+                        <div class="panel panel-default">
+                          <div class="panel-heading">
                             <h4 class="panel-title font-alt"><a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#support2">What will be the input size of the cropped images?  Raw size as extracted from the video?  Or resized / resampled in any manner?</a></h4>
                           </div>
                           <div class="panel-collapse collapse in" id="support2">
