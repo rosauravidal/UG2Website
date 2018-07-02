@@ -67,21 +67,25 @@
             <ul class="nav navbar-nav navbar-right">
               <li><a href="index.html">Home</a></li>
               <li><a href="dataset.html">Dataset</a></li>
-              <li><a href="challenges.html">Challenges</a></li>
-              <li><a href="rules.html">Rules</a></li>
-              <li><a href="submissions.html">Submissions</a></li>
               
-              <!-- <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Challenges</a>
+              <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Challenges</a>
                 <ul class="dropdown-menu">
-                  <li class="dropdown"><a href="challenge1.html">Qualitative image enhancement</a>
+                  <li class="dropdown"><a href="challenges.html">Challenge Tracks</a>
                   </li>
-                  <li class="dropdown"><a href="challenge2.html">Quantitative image enhancement</a>
+                  <li class="dropdown"><a href="rules.html">Rules</a>
+                  </li>
+                  <li class="dropdown"><a href="submissions.html">Submissions</a></li>
+                </ul>
+              </li>              
+              <li class="dropdown"><a class="dropdown-toggle" href="program.html" data-toggle="dropdown">Program</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown"><a href="gallery.html">Gallery</a>
                   </li>
                 </ul>
-              </li>
-              <li><a href="submission.html">Submission</a></li> -->
-              <li><a href="program.html">Program</a></li>
-              <li><a href="faq.html">FAQ</a></li>   
+              </li>                 
+              <li><a href="winners.html">Winners</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+            </ul>   
           </div>
         </div>
       </nav>
@@ -126,12 +130,12 @@
               <div class="col-sm-8 col-sm-offset-2">
                 <h3 class="module-title font-serif" style="margin-bottom: 60px">Challenges</h3>
 
-                <h4 class="module-subtitle font-alt" style="margin-bottom: 20px; text-align: left">1. Image Enhancement to Facilitate Manual Inspection</h4>                
+                <h4 class="module-subtitle font-alt" style="margin-bottom: 20px; text-align: left" id="challenge1">1. Image Enhancement to Facilitate Manual Inspection</h4>                
                 <p style="text-align: justify;">The first challenge will be an evaluation of the qualitative enhancement of images (super-resolution, de-noising, and deblurring are within scope here) from a sequestered testing dataset. At least one test in the challenge will include calibration chart ground-truth: charts with vertical lines and color calibration data.</p>
                 <p style="text-align: justify;">Scoring in this case will make use of human raters voting on perceived improvement. In order to do this, we will use Amazon’s Mechanical Turk service to crowdsource the judgements over large populations of raters. A likert-scale based task will be deployed, whereby a reasonably large number of raters will determine which image, the original or the restored/enhanced version, is of higher quality.</p>
                 <p style="text-align: justify;">Further, inspired by visual psychophysics, rater reaction time will be used to gauge the difficulty of presented image pairs. This will allow us to assign weights to each result (i.e., if a rater takes a long time to determine that an enhanced image is better, it may not be as good as a result where the rater immediately made the same conclusion). This will be factored into the final score.</p>
 
-                <h4 class="module-subtitle font-alt" style="margin-bottom: 20px; text-align: left; padding-top: 20px">2. Image Enhancement to Improve Automatic Object Recognition</h4>                
+                <h4 class="module-subtitle font-alt" style="margin-bottom: 20px; text-align: left; padding-top: 20px" id="challenge2">2. Image Enhancement to Improve Automatic Object Recognition</h4>                
                 <p style="text-align: justify;">The second challenge will be an evaluation of classification improvement. The evaluation protocol will allow participants to make use of some within dataset training data, and as much out of dataset training data as they would like for training / validation purposes. <b>Participants will not be tasked with the creation of novel classification algorithms.</b></p>
                 <p style="text-align: justify;"> In order to establish good baselines for classification performance before and after the application of image enhancement and restoration algorithms, the testing will make use of a selection of common deep learning approaches to recognize annotated objects and then considered the correct classification rate. Namely, the Keras versions of the pre-trained networks VGG16 and VGG19, Inception V3, and ResNet50.</p>
                 <p>Each candidate restoration or enhancement algorithm will be treated as an image pre-processing step to prepare sequestered test images to be submitted to all four networks, which serve as canonical classification references.</p>
