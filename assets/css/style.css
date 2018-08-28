@@ -4,6 +4,8 @@
 html {
 /*  overflow-y: scroll;*/
 /*  overflow-x: hidden;*/
+
+  font-size: unset;
 }
 
 body {
@@ -2305,8 +2307,58 @@ Google map
 .panel-heading a.collapsed:after {
   content: "\f107";
 }
+/*.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    color: #555;
+    cursor: default;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+}
 
+.nav-tabs>li {
+    float: left;
+    margin-bottom: -1px;
+}
+
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+
+.well, .label, .alert, .progress, .form-control, .modal-content, .panel-heading, .panel-group .panel, .nav-tabs > li > a, .nav-pills > li > a {
+    border-radius: 2px;
+}
+.nav-tabs>li>a {
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+}*/
 /* Tables */
+
+.table td, .table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  padding: 0.75rem;
+  line-height: unset;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+}
+.table > thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #ddd;
+}
+
 .table-border > tbody > tr > td,
 .table-border > tbody > tr > th,
 .table-border > tfoot > tr > td,
