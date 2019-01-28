@@ -66,7 +66,7 @@
           <<div class="row" style="padding-top: 40px">
             <div class="col-sm-12">
               <h2 class="module-title font-alt" style="margin: 0 0 20px">Guidelines</h2>
-              <h3 class="module-subtitle font-serif" style="margin: 0 0 20px"><a href="#timetable" class="section-scroll btn btn-border-w btn-round">Time table</a>  <a href="#prizes" class="section-scroll btn btn-border-w btn-round">Prizes</a> <a href="#submission" class="section-scroll btn btn-border-w btn-round">Submission guidelines</a> <a href="#framework" class="section-scroll btn btn-border-w btn-round">Framework</a></h3>
+              <h3 class="module-subtitle font-serif" style="margin: 0 0 20px"><a href="#timetable" class="section-scroll btn btn-border-w btn-round">Time table</a>  <a href="#prizes" class="section-scroll btn btn-border-w btn-round">Prizes</a> <a href="#submission" class="section-scroll btn btn-border-w btn-round">Submission Rules</a> <a href="#framework" class="section-scroll btn btn-border-w btn-round">Framework</a></h3>
             </div>
           </div>
         </div>
@@ -85,7 +85,7 @@
                 <li>May 20, 2019: Challenge results will be released</li>
                 <li>June 18, 2019: Most succesful and innovative teams present at <a href="http://cvpr2019.thecvf.com/">CVPR 2019 workshop</a></li>
               </ul>
-              ** Every contestant will have the opportunity to verify before the submission window closes that their Docker container submission works. This dry run is completely optional but is highly recommended.
+              ** Every contestant will have the opportunity to verify before the submission window closes that their Singularity container submission works. This dry run is completely optional but is highly recommended.
 
             </div>
           </div>
@@ -138,7 +138,7 @@
         <div class="container">
           <div class="row" style="text-align: justify">
             <div class="col-sm-12 font-nat" style="font-size: 13pt">            
-              <h3 class="module-title font-alt" style="margin: 0px; padding: 30px 0 20px">Submission Guidelines</h3>
+              <h3 class="module-title font-alt" style="margin: 0px; padding: 30px 0 20px">Submission Rules</h3>
               <p>Read carefully the following guidelines before submitting. Methods not complying with the guidelines will be disqualified.</p>
               <ul>
                 <li>Participants are expected to develop robust solutions to improve the visual task of a given sub-challenge, thus it is not allowed to tailor different methods or to alter the parameters of a method for any individual benchmark dataset (or subset of any of the datasets). A submission whose method is trained separately on a subset of a benchmark, resulting in different parameters/weights for any other subset or dataset of a given sub-challenge, or that employs a classifier to identify a given input's benchmark or subset will be considered invalid. Moreover, a method who makes use of the knowledge of some lables corresponding to any specific benchmark, or that excecutes separate program paths designed specifically for individual datasets will also be considered in violation of these guidelines.</li>
@@ -147,7 +147,7 @@
 
                 <li>Participants who have investigated several algorithms may submit up to 3 algorithms per challenge. Only a single submission per participant can be the winner of a single sub-challenge. Changes in algorithm parameters do not constitute a different method, all parameter tuning must be conducted using the dataset provided and any additional data the participants consider appropriate.</li>
 
-                <li>The algorithms designed must process each image or sequence of images (for sub-challenges centered in video enhancement) provided in a designated input folder, and save the enhanced versions under the same image name at a designated output folder. That is, an image input/0.jpg would be saved by the first algorithm proposed by the participants in output1/0.png. While it is acceptable for a method to skip the processing of some input frames (working under the assumption that the algorithm deemed them to be of a good enough quality), submissions are expected to enhance a majority of the input data.</li>
+                <li>The algorithms designed must process each image or sequence of images (for sub-challenges centered in video enhancement) provided in a designated input folder, and save the enhanced versions under the same image name at a designated output folder. That is, an image input/0.jpg would be saved by the first algorithm proposed by the participants in output1/0.png.</li>
               </ul>
               <h3 class="work-details-title font-alt">Elegibility</h3>
               <ul>
@@ -168,7 +168,7 @@
         </div>
       </section>
       
-      <section class="module-medium" style="padding:20px 0px 0px" id='framework'>
+      <section class="module-medium" style="padding:20px 0px 30px" id='framework'>
         <div class="container">
           <div class="row" style="text-align: justify">
             <div class="col-sm-12 font-nat" style="font-size: 13pt">            
@@ -187,21 +187,7 @@
         </div>
       </section>
 
-      <hr class="divider-d">
-        <footer class="footer bg-dark">
-          <div class="container" style="margin:0px; width: 100%"> 
-            <div class="row" style="padding:0px 40px 0px 40px">
-              <div class="col-sm-6">
-                <p class="copyright font-alt">&copy; 2019&nbsp;<a href="index.html">UG<sup>2</sup></a>, All Rights Reserved</p>
-              </div>
-              <div class="col-sm-6">
-                <div class="footer-social-links"><a href="mailto:ug2challenge@gmail.com?"><i class="fa fa-envelope"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </footer>
-      </div>
+      <a id="ddfooterLink" href="footer.html">Footer</a>
       <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
     </main>
     <!--  
@@ -222,5 +208,6 @@
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/ddmenu.js" type="text/javascript"></script>
-  </body>
+    <script src="assets/js/ddfooter.js" type="text/javascript"></script>
+</body>
 </html>
