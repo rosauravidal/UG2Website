@@ -148,6 +148,12 @@
                 <li>Participants who have investigated several algorithms may submit up to 3 algorithms per challenge. Only a single submission per participant can be the winner of a single sub-challenge. Changes in algorithm parameters do not constitute a different method, all parameter tuning must be conducted using the dataset provided and any additional data the participants consider appropriate.</li>
 
                 <li>The algorithms designed must process each image or sequence of images (for sub-challenges centered in video enhancement) provided in a designated input folder, and save the enhanced versions under the same image name at a designated output folder. That is, an image input/0.jpg would be saved by the first algorithm proposed by the participants in output1/0.png.</li>
+                <li>
+                  If an algorithm is submitted that makes inefficient use of deep learning, we may not be able to process the entire test set due to time constraints. To avoid this possibility, we will place limits on per-image runtime.
+                </li>
+                <li>
+                  Results can vary based on the GPU used. We noticed that results varied slightly across GPU models. We are restricting our evaluation to one model (TitanXP) and will encourage participants to use this model in their development.
+                </li>
               </ul>
               <h3 class="work-details-title font-alt">Elegibility</h3>
               <ul>
