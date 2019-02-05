@@ -61,14 +61,12 @@ function Ddmenu(k) {
         cb = "ontouchstart" in window || window.DocumentTouch && document instanceof DocumentTouch,
         T = (o.msPointerEnabled || o.pointerEnabled) && (o.msMaxTouchPoints || o.maxTouchPoints);
     if (T)
-        if (o.msPointerEnabled) 
-            var O = "MSPointerOver",
-                P = "MSPointerOut";
+        if (o.msPointerEnabled) var O = "MSPointerOver",
+            P = "MSPointerOut";
         else {
             O = "pointerover";
             P = "pointerout"
         }
-
     var n = function(e) {
             for (var c = p(g, "li"), b = 0, f = c[a]; b < f; b++)
                 if (d(c[b], "over")) e != c[b] && E(c[b], 0);
@@ -97,7 +95,7 @@ function Ddmenu(k) {
             }
         },
         t = eb(),
-        z = function(e) {            
+        z = function(e) {
             var b = e.childNodes,
                 d = [];
             if (b)
@@ -444,38 +442,26 @@ function Ddmenu(k) {
             var a;
             if (window.XMLHttpRequest) a = new XMLHttpRequest;
             else a = new ActiveXObject("Microsoft.XMLHTTP");
-            //console.log(a);
             a.onreadystatechange = function() {
                 if (a.readyState == 4 && a.status == 200) {
                     var d = a.responseText,
                         f = /^[\s\S]*<body[^>]*>([\s\S]+)<\/body>[\s\S]*$/i;
-                    
                     if (f.test(d)) d = d.replace(f, "$1");
-
                     var c = q(v, "div");
-                    //console.log(c);
-                    //console.log(b);
-                    //console.log(i);
-                    //console.log(b[i]);
                     c[e].padding = c[e].margin = "0";
                     b[i].insertBefore(c, b);
                     c.innerHTML = d;
                     b[e][w] = "none";
                     Q()
-                    //console.log('back to onreadystatechange, here the navbar is created')
-                    initializeVariables();
                 }
             };
-            //console.log('out of onreadystatechange');
             a.open("GET", b.href, true);
             a.send()
         },
         R = function() {
-            //console.log('inside R');
             i = "parentNode", e = "style", w = "display";
             if (f.e) {
                 var a = q("getElementById", f.e);
-                //console.log(a)
                 if (a) W(a);
                 else alert('Cannot find the anchor (id="' + f.e + '")')
             } else Q()
@@ -483,12 +469,9 @@ function Ddmenu(k) {
         I = 0,
         G = 0,
         Q = function() {
-            //console.log('inside Q');            
             if (!I) {
                 var b = q("getElementById", f.b);
-                //console.log(f.b);
                 if (b) {
-                    //console.log('inside if b')
                     for (var i = p(b, "*"), h = 0; h < i[a]; h++)
                         if (d(i[h], "menu-icon")) {
                             c = i[h];
@@ -524,14 +507,11 @@ function Ddmenu(k) {
             function b() {
                 if (a) return;
                 a = 1;
-                setTimeout(c, 1)
+                setTimeout(c, 4)
             }
             if (g[A]) g[A]("DOMContentLoaded", b, false);
             else r(window, "load", b)
-
-            //console.log('TRULY DONE')
         };
-    //console.log(t);
     if (t < 9) {
         var kb = q(v, "nav"),
             U = p(g, "head");
@@ -539,15 +519,7 @@ function Ddmenu(k) {
         U[0].appendChild(kb)
     }
     X();
-    //console.log(f);
-    //console.log(R);
-    //console.log(g);
-    //console.log(A);
-    //console.log(g[A]);
     fb(R);
-    //console.log('ddmenu done');
-    //console.log(navbar);
-    
     return {
         init: function() {
             I = 0;
@@ -555,4 +527,3 @@ function Ddmenu(k) {
         }
     }
 }
-

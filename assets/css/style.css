@@ -1259,7 +1259,7 @@ General Styles - Owlcarousel
 	Navbar
 --------------------------------------------------------------*/
 .navbar-custom {
-  background-color: rgba(10, 10, 10, 1); /*rgba(10, 10, 10, 0.9)*/
+  background-color: rgba(10, 10, 10, 0.5); /*rgba(10, 10, 10, 0.9)*/
   border: 0;
   border-radius: 0;
   z-index: 1000;
@@ -1316,6 +1316,9 @@ General Styles - Owlcarousel
   left: auto;
 }
 
+
+
+
 .navbar-custom .nav > li > a:focus,
 .navbar-custom .nav > li > a:hover,
 .navbar-custom .nav .open > a,
@@ -1339,7 +1342,8 @@ General Styles - Owlcarousel
   margin-top: -6px;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: 9px;
-  content: "\f107";
+  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f0d7";
+
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -2770,7 +2774,7 @@ Google map
 @media (min-width: 768px) {
   .navbar-transparent {
     /*background: transparent;*/
-    background: rgba(30, 30, 30, 0.2) !important;
+    background: rgba(30, 30, 30, 0.5) !important;
     /*padding-bottom: 15px;
     padding-top: 15px;*/
   }
