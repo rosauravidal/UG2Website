@@ -66,7 +66,7 @@
           <<div class="row" style="padding-top: 40px">
             <div class="col-sm-12">
               <h2 class="module-title font-alt" style="margin: 0 0 20px">Guidelines</h2>
-              <h3 class="module-subtitle font-serif" style="margin: 0 0 20px"><a href="#timetable" class="section-scroll btn btn-border-w btn-round">Time table</a>  <a href="#prizes" class="section-scroll btn btn-border-w btn-round">Prizes</a> <a href="#submission" class="section-scroll btn btn-border-w btn-round">Submission Rules</a> <a href="#framework" class="section-scroll btn btn-border-w btn-round">Framework</a></h3>
+              <h3 class="module-subtitle font-serif" style="margin: 0 0 20px"><a href="#timetable" class="section-scroll btn btn-border-w btn-round">Time table</a>  <a href="#prizes" class="section-scroll btn btn-border-w btn-round">Prizes</a> <a href="#submission" class="section-scroll btn btn-border-w btn-round">Submission</a> <a href="#rules" class="section-scroll btn btn-border-w btn-round">Rules</a> <a href="#framework" class="section-scroll btn btn-border-w btn-round">Framework</a></h3>
             </div>
           </div>
         </div>
@@ -131,7 +131,50 @@
         <div class="container">
           <div class="row" style="text-align: justify">
             <div class="col-sm-12 font-nat" style="font-size: 13pt">            
-              <h3 class="module-title font-alt" style="margin: 0px; padding: 30px 0 20px">Submission Rules</h3>
+              <h3 class="module-title font-alt" style="margin: 0px; padding: 30px 0 20px">Submission</h3>
+              <p style="text-align: justify;">For your submission, follow these steps:</p>
+              <ol style="text-align: justify;">
+                <li>Download the <a href='dataset19_t1.html'>training datasets</a> and the <a href="https://drive.google.com/open?id=1Lk1-mTIlyUTwp70OtatItDcPn6Q4NiRcokoylmqGIV8" style="color: #337ab7; text-decoration: underline">Development Kit</a>.</li>
+                <li>Develop your solution and evaluate it on the validation sets (the evaluation code will be provided in the Development Kit).</li>
+                <li>Please make sure that:
+                  <ul>
+                    <li>Your algorithms can take all images from the "home/input/" directory as input</li>
+                    <li>You output the results into "home/output/alg#/" (# refers to the number of the algorithm submission[0-2]). Make sure that the input file names are preserved (that is, img0.png should be processed by your algorithm and saved as img0.png in the output folder for your algorithm).</li>
+                  </ul>
+                </li>
+                <li>Pack all your code into the singularity container (see the Devkit README for more information on this), and make sure the organizers can run it and can generate the output files with the provided algorithm based on the given input files. Also, a <a href="https://drive.google.com/open?id=1Lk1-mTIlyUTwp70OtatItDcPn6Q4NiRcokoylmqGIV8" style="color: #337ab7; text-decoration: underline">README file</a> explaining how your algorithms work and how to change the running behavior of the algorithms are welcomed.</li>
+                <li>Upload your compiled Singularity image to Google Drive (or any cloud service) and submit your link to the corresponding sub-challenge. Note that, your Singularity container should inherit from our provided Singularity recipe template. The organizers will not guarantee to test with the dockers that are built from other recipe files.</li>
+                <li>Each team may submit up to 3 algorithms per sub challenge. All submissions (per sub challenge) will be held within one single Singularity image. The Singularity image will contain all dependencies and code required to perform the model’s operation and will execute the model(s) contained upon run.</li>
+              </ol>
+              <h3 class="work-details-title font-alt">Development Kit</h3>
+              <p style="text-align: justify;"><a href="https://drive.google.com/open?id=1Lk1-mTIlyUTwp70OtatItDcPn6Q4NiRcokoylmqGIV8" style="color: #337ab7; text-decoration: underline">The Development Kit</a> consists of a Singularity recipe file containing the basic structure for the algorithm submission, as well as instructions on how to use, and compile into an executable image. The images, annotation, and lists specifying the training/validation sets for the challenge are provided separately, and can be obtained on our <a href='dataset19_t1.html' style="color: #337ab7; text-decoration: underline">Dataset page</a>.</p>
+              <p style="text-align: justify;">Additional files to process the dataset as well as to evaluate their algorithm's performance for each track is also provided.</p>
+              <h3 class="work-details-title font-alt">Requirements</h3>
+              <b>Software:</b>
+              <ul>
+                <li>Singularity</li>
+                <li>NVIDIA</li>
+                <li>CUDA 8.0</li>
+                <li>cuDNN v5.0</li>
+              </ul>
+              <b>Hardware.</b>
+              <p>The proposed algorithms should be able to run in systems with:</p>
+              <ul>
+                <li>Up to and including Titan Xp 12 GB</li>
+                <li>Up to and including 12 cores</li>
+                <li>Up to and including 32gb memory</li>
+              </ul>
+              <p style="text-align: justify;">If you have any questions about this challenge track please feel free to email <a style="color: #337ab7; text-decoration: underline" href="mailto:ug2challenge@gmail.com">ug2challenge@gmail.com</a></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="module-medium" style="padding:20px 0px 0px" id='rules'>
+        <div class="container">
+          <div class="row" style="text-align: justify">
+            <div class="col-sm-12 font-nat" style="font-size: 13pt">            
+              <h3 class="module-title font-alt" style="margin: 0px; padding: 30px 0 20px">Rules</h3>
               <p>Read carefully the following guidelines before submitting. Methods not complying with the guidelines will be disqualified.</p>
               <ul>
                 <li>Participants are expected to develop robust solutions to improve the visual task of a given sub-challenge, thus it is not allowed to tailor different methods or to alter the parameters of a method for any individual benchmark dataset (or subset of any of the datasets). A submission whose method is trained separately on a subset of a benchmark, resulting in different parameters/weights for any other subset or dataset of a given sub-challenge, or that employs a classifier to identify a given input benchmark or subset will be considered invalid. Moreover, a method who makes use of the knowledge of some labels corresponding to any specific benchmark, or that executes separate program paths designed specifically for individual datasets will also be considered in violation of these guidelines.</li>

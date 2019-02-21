@@ -143,9 +143,17 @@
               <ol style="text-align: justify;">
                 <li>Download the training/validation datasets and the Development Kit (DevKits).</li>
                 <li>Train or finetune your model and run your trained model on the validation set. You can use the DevKits to evaluate the validation performance.</li>
-                <li>Please make sure that: a) your algorithms can take all images from the “/root/UG2/Sub_challenge2_1/input/ ” directory as input and output the results into “/root/UG2/Sub_challenge2_1/output/userid/output/submission_#/” (# refers to the number of submission). For Challenge 2, the output will be a file that has the same prefix name to the input file and “.txt” as its postfix with several lines to denote the bounding box locations as its content as following: <br>531 189 573 240 <br> 269 193 284 206</li>
+                <li>Please make sure that:
+                <ul>
+                  <li>Your algorithms can take all images from the “/root/UG2/Sub_challenge2_1/input/ ” directory as input</li>
+                  <li>
+                    You output the results into “/root/UG2/Sub_challenge2_1/output/userid/output/submission_#/” (# refers to the number of submission). For Challenge 2, the output will be a file that has the same prefix name to the input file and “.txt” as its postfix with several lines to denote the bounding box locations as its content as following: 
+                    <ul><li>531 189 573 240</li> <li>269 193 284 206 </li></ul>
+                  </li>
+                </ul>
+                </li>
                 <li>Pack all your code into a docker, and make sure the organizers can run “/root/UG2/ Sub_challenge2_1/test_submission_#.sh” and can generate the output files with the provided algorithm based on the given input files. Also, a README file explaining how your algorithms work and how to change the running behavior of the algorithms are welcomed.</li>
-                <li>Upload your dock to Docker Hub https://hub.docker.com/ and submit your docker link to the corresponding sub challenge. Check your uploaded docker with the testing code provided in our DevKits to make sure that the uploaded docker can work correctly. Note that, the basic docker should inherit from our provided docker template, whose docker link will be provided in DevKits. The organizers will not guarantee to test with the dockers that are built from other templates.</li>
+                <li>Upload your dock to <a href="https://hub.docker.com/">Docker Hub</a> and submit your docker link to the corresponding sub challenge. Check your uploaded docker with the testing code provided in our DevKits to make sure that the uploaded docker can work correctly. Note that, the basic docker should inherit from our provided docker template, whose docker link will be provided in DevKits. The organizers will not guarantee to test with the dockers that are built from other templates.</li>
                 <li>Each team may submit up to 3 algorithms per sub challenge. All submissions (per sub challenge) will be held within one single Docker container to be uploaded to Docker Hub. The Docker container will contain all dependencies and code required to perform the model’s operation and will execute the model(s) contained upon run.</li>
               </ol>
               <h3 class="work-details-title font-alt">Development Kit</h3>
@@ -176,6 +184,7 @@
                 <li>Up to and including 12 cores</li>
                 <li>Up to and including 32gb memory</li>
               </ul>
+              <p style="text-align: justify;">If you have any questions about this challenge track please feel free to email <a style="color: #337ab7; text-decoration: underline" href="mailto:ug2challenge.2@gmail.com">ug2challenge.2@gmail.com</a></p>
             </div>
           </div>
         </div>
