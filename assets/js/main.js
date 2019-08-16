@@ -78,9 +78,6 @@ function navbarSubmenu(width) {
  /* ---------------------------------------------- */
 
 function hoverDropdown(width, mobileTest) {
-    console.log('howdy');
-    console.log(width);
-    console.log(mobileTest);
     if ((width > 767) && (mobileTest !== true)) {
         $('.navbar-custom .navbar-nav > li.dropdown, .navbar-custom li.dropdown > ul > li.dropdown').removeClass('open');
         var delay = 0;
